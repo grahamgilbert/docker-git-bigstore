@@ -4,8 +4,13 @@ ENV GIT_BRANCH=master
 RUN apt-get update \
   && apt-get install -y python-pip python-dev build-essential git \
   && rm -rf /var/lib/apt/lists/* \
-  && pip install gitpython==0.3.2.RC1 boto==2.8.0 python-dateutil==1.5 pytz==2012h python-cloudfiles==1.7.11 \
-  pip install git-bigstore
+  && pip install --upgrade gitpython==0.3.2.RC1 \
+  && pip install --upgrade boto==2.8.0 \
+  && pip install --upgrade python-dateutil==1.5 \
+  && pip install --upgrade pytz==2012h \
+  && pip install --upgrade python-cloudfiles \
+  && pip install git-bigstore \
+  && rm -rf /tmp/*
 
 # Configure .ssh directory
 RUN mkdir /root/.ssh \
