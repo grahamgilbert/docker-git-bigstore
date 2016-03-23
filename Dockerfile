@@ -1,5 +1,5 @@
 FROM ubuntu:14.04.4
-ENV GIT_DIR=/data
+ENV TARGET_DIR=/data
 ENV GIT_BRANCH=master
 RUN apt-get update \
   && apt-get install -y python-pip python-dev build-essential git \
