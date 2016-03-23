@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cd $GIT_DIR
+cd $TARGET_DIR
 git bigstore init
 git bigstore pull
