@@ -22,4 +22,4 @@ COPY /docker-entrypoint.sh /
 COPY /docker-entrypoint.d/* /docker-entrypoint.d/
 RUN chmod 755 /docker-entrypoint.sh && chmod -R 755 /docker-entrypoint.d
 
-ENTRYPOINT ["/docker-entrypoint.sh"]
+CMD ["/docker-entrypoint.sh"]
