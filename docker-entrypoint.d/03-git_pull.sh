@@ -6,6 +6,7 @@ LOCALREPO_VC_DIR=$TARGET_DIR/.git
 if [ ! -d $LOCALREPO_VC_DIR ]
 then
     git clone ${REPOSITORY} $TARGET_DIR
+    cd $TARGET_DIR
     git checkout ${GIT_BRANCH}
 else
     cd $TARGET_DIR
