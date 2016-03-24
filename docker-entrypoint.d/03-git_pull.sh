@@ -8,7 +8,7 @@ then
     git clone ${REPOSITORY} $TARGET_DIR
     git checkout ${GIT_BRANCH}
 else
-    cd $GIT_DIR
+    cd $TARGET_DIR
     git checkout ${GIT_BRANCH}
     git reset --hard origin/${GIT_BRANCH}
     git pull ${REPOSITORY}
