@@ -11,6 +11,6 @@ then
 else
     cd $TARGET_DIR
     git checkout ${GIT_BRANCH}
-    git reset --hard origin/${GIT_BRANCH}
+    git reset --hard ${GIT_BRANCH}
     git pull ${REPOSITORY}
 fi
